@@ -61,7 +61,7 @@ const Home = () => {
             <HeaderBar>
               <h3>Staff Software Instructor</h3>
             </HeaderBar>
-            <p>Working at in an internal development boot camp teaching modern technologies and practices ranging from full stack developer courses, to one week technology workshops on git, Go, Java, JavaScript, React, Agile workflow, XP practices, and more.</p>
+            <p>Working in an internal development boot camp teaching modern technologies and practices ranging from full stack developer courses, to one week technology workshops on git, Go, Java, JavaScript, React, Agile workflow, XP practices, and more.</p>
           </Card>
           <Card className="skinny">
             <HeaderImg className="orange">
