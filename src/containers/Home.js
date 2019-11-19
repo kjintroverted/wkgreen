@@ -132,6 +132,7 @@ const Home = () => {
           <p>Find me on Instagram <a href="https://www.instagram.com/kjintroverted/">@kjintroverted</a></p>
           <p>Connect on Twitter <a href="https://twitter.com/kjintroverted">@kjintroverted</a></p>
           <p>Check out my projects on GitHub <a href="https://github.com/kjintroverted">@kjintroverted</a></p>
+          <p>Email me at <a>mail@wkgreen.dev</a></p>
         </Contact>
       </Section>
     </>
@@ -151,6 +152,7 @@ const Black = styled.div`
 
 const BannerIcon = styled.img`
   order: 1;
+  margin: 100px 0px;
   @media (min-width: 496px) {
     order: 3;
   }
