@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: kjintroverted/go-node
+    working_directory: ~/wkgreen
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run build
+
+  deploy:
+    docker:
+      - image: kjintroverted/go-node
+    working_directory: ~/wkgreen
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "cf:20:1b:1c:f0:20:df:76:a7:79:fa:3d:65:60:cf:a8"
+      - run: npm i
+      - run: npm i surge
+      - run: npm run build
+      - run: rm -rf .git
+      - run: echo "https://wkgreen.dev" > ./build/CNAME
+      - run: cd build && git init
+      - run: cd build && git remote add origin git@github.com:kjintroverted/wkgreen.git
+      - run: cd build && git checkout -b gh-pages
+      - run: cd build && git add .
+      - run: cd build && git config user.email "wkgreen13@gmail.com"
+      - run: cd build && git config user.name "CircleCI"
+      - run: cd build && git commit -m "CI Deploy"
+      - run: cd build && git push -uf origin gh-pages
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          filters:
+            branches:
+              only: master
