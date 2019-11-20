@@ -109,6 +109,9 @@ export const HeaderBar = styled.div`
     text-align: left;
     margin: 0px;
   }
+  h3.white {
+    color: white;
+  }
 `
 
 export const HeaderImg = styled.div`

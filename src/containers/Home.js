@@ -61,7 +61,7 @@ const Home = () => {
               <Icon className="material-icons">school</Icon>
             </HeaderImg>
             <HeaderBar>
-              <h3>Staff Software Instructor</h3>
+              <h3 className="white">Staff Software Instructor</h3>
             </HeaderBar>
             <p>Working in an internal development boot camp teaching modern technologies and practices ranging from full stack developer courses, to one week technology workshops on git, Go, Java, JavaScript, React, Agile workflow, XP practices, and more.</p>
           </Card>
@@ -70,7 +70,7 @@ const Home = () => {
               <Icon className="material-icons">desktop_mac</Icon>
             </HeaderImg>
             <HeaderBar>
-              <h3>Senior Software Engineer</h3>
+              <h3 className="white">Senior Software Engineer</h3>
             </HeaderBar>
             <p>Member of the Home Depot Supply Chain Sync project. Our primary project revolves around a set of Java Batch processes meant to optimize our Supply Chain logistics.</p>
           </Card>
@@ -79,7 +79,7 @@ const Home = () => {
               <Icon className="material-icons">wifi_tethering</Icon>
             </HeaderImg>
             <HeaderBar>
-              <h3>Software Developer</h3>
+              <h3 className="white">Software Developer</h3>
             </HeaderBar>
             <p>Working remotely at a small consulting firm in Atlanta I got the opportunity to work with an established company building custom extensions for Microsoft systems and the services to power them in order to better serve our clients.</p>
           </Card>
@@ -88,7 +88,7 @@ const Home = () => {
               <Icon className="material-icons">create</Icon>
             </HeaderImg>
             <HeaderBar>
-              <h3>Designer and Co-Founder</h3>
+              <h3 className="white">Designer and Co-Founder</h3>
             </HeaderBar>
             <p>Shameless plug time: my wife and I run a small business designing and producing custom headbands and accessories. Here, I get the opportunity to really stretch and grow in design and 3D modeling skills.</p>
           </Card>
