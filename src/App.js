@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Button } from '@material-ui/core'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import { Spacer } from './components';
+import { Spacer, colors } from './components';
 import { Home } from './containers';
 
 const opts = {
@@ -46,6 +46,10 @@ const NavBar = styled.div`
       display: flex;
       background: white;
       align-items: center;
+      color: ${colors.darker };
+      & a {
+        color: ${colors.darker };
+      }
       & .title {
         margin-left: 5px;
         cursor: default;

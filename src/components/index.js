@@ -4,7 +4,9 @@ export const colors = {
   light: '#C4FAFB',
   primary: '#38DDE3',
   dark: '#10B1BC',
-  darker: '#037885'
+  darker: '#037885',
+  secondary: '#DB9502',
+  warn: '#DB0D02'
 }
 
 export const Spacer = styled.span`
@@ -114,7 +116,9 @@ export const HeaderImg = styled.div`
   display: flex;
   justify-content: center;
   overflow: hidden;
+  background: ${colors.secondary };
   color: white;
+  border-radius: 5px;
   &.red {
     background: red;
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Section, Card, HeaderBar, Row, HeaderImg, BarHeader, Column } from '../components';
+import { Section, Card, HeaderBar, Row, HeaderImg, BarHeader, Column, colors } from '../components';
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
           <Subtext>Web Design</Subtext>
           <Subtext>Instruction</Subtext>
         </Dev>
-        <BannerIcon src="https://cdn.discordapp.com/attachments/518602442200580097/646171895070326815/kaos_kj_bw.png" />
+        <BannerIcon src="https://cdn.discordapp.com/attachments/587692729044303893/646728421170216988/kaos_kj_tw.png" />
         <Design className="flex">
           <Subtitle>Designer</Subtitle>
           <Subtext>Vector Design</Subtext>
@@ -54,8 +54,8 @@ const Home = () => {
       <Section className="primary">
         <BarHeader className="primary">Experience.</BarHeader>
         <Row>
-          <Card className="skinny">
-            <HeaderImg className="red">
+          <Card className="skinny flat">
+            <HeaderImg>
               <Icon className="material-icons">school</Icon>
             </HeaderImg>
             <HeaderBar>
@@ -63,8 +63,8 @@ const Home = () => {
             </HeaderBar>
             <p>Working in an internal development boot camp teaching modern technologies and practices ranging from full stack developer courses, to one week technology workshops on git, Go, Java, JavaScript, React, Agile workflow, XP practices, and more.</p>
           </Card>
-          <Card className="skinny">
-            <HeaderImg className="orange">
+          <Card className="skinny flat">
+            <HeaderImg>
               <Icon className="material-icons">desktop_mac</Icon>
             </HeaderImg>
             <HeaderBar>
@@ -72,8 +72,8 @@ const Home = () => {
             </HeaderBar>
             <p>Member of the Home Depot Supply Chain Sync project. Our primary project revolves around a set of Java Batch processes meant to optimize our Supply Chain logistics.</p>
           </Card>
-          <Card className="skinny">
-            <HeaderImg className="green">
+          <Card className="skinny flat">
+            <HeaderImg>
               <Icon className="material-icons">wifi_tethering</Icon>
             </HeaderImg>
             <HeaderBar>
@@ -81,8 +81,8 @@ const Home = () => {
             </HeaderBar>
             <p>Working remotely at a small consulting firm in Atlanta I got the opportunity to work with an established company building custom extensions for Microsoft systems and the services to power them in order to better serve our clients.</p>
           </Card>
-          <Card className="skinny">
-            <HeaderImg className="purple">
+          <Card className="skinny flat">
+            <HeaderImg>
               <Icon className="material-icons">create</Icon>
             </HeaderImg>
             <HeaderBar>
@@ -132,7 +132,7 @@ const Home = () => {
           <p>Find me on Instagram <a href="https://www.instagram.com/kjintroverted/">@kjintroverted</a></p>
           <p>Connect on Twitter <a href="https://twitter.com/kjintroverted">@kjintroverted</a></p>
           <p>Check out my projects on GitHub <a href="https://github.com/kjintroverted">@kjintroverted</a></p>
-          <p>Email me at <a>mail@wkgreen.dev</a></p>
+          <p>Email me at <a href="mailto:mail@wkgreen.dev" >mail@wkgreen.dev</a></p>
         </Contact>
       </Section>
     </>
@@ -147,12 +147,13 @@ const Black = styled.div`
   left: 0;
   width: 50%;
   height: 100%;
-  background: black;
+  background: ${colors.darker };
 `
 
 const BannerIcon = styled.img`
   order: 1;
-  margin: 100px 0px;
+  max-width: 100%;
+  margin: 30px 0px;
   @media (min-width: 496px) {
     order: 3;
   }
@@ -174,6 +175,7 @@ const Design = styled.div`
   justify-content: center;
   align-items: flex-end;
   order: 4;
+  color: ${colors.darker }
 `
 
 const Subtitle = styled.h1`
