@@ -13,7 +13,7 @@ const Home = () => {
           <Subtext>Web Design</Subtext>
           <Subtext>Instruction</Subtext>
         </Dev>
-        <BannerIcon src="https://cdn.discordapp.com/attachments/587692729044303893/646728421170216988/kaos_kj_tw.png" />
+        <BannerIcon src="https://cdn.discordapp.com/attachments/587692729044303893/646737878919151632/kaos_kj_tw.png" />
         <Design className="flex">
           <Subtitle>Designer</Subtitle>
           <Subtext>Vector Design</Subtext>
