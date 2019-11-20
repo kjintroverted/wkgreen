@@ -13,7 +13,9 @@ const Home = () => {
           <Subtext>Web Design</Subtext>
           <Subtext>Instruction</Subtext>
         </Dev>
-        <BannerIcon src="https://cdn.discordapp.com/attachments/587692729044303893/646737878919151632/kaos_kj_tw.png" />
+        <BannerIcon>
+          <img src="https://cdn.discordapp.com/attachments/587692729044303893/646737878919151632/kaos_kj_tw.png" alt="wkgreen_icon" />
+        </BannerIcon>
         <Design className="flex">
           <Subtitle>Designer</Subtitle>
           <Subtext>Vector Design</Subtext>
@@ -150,12 +152,22 @@ const Black = styled.div`
   background: ${colors.darker };
 `
 
-const BannerIcon = styled.img`
+const BannerIcon = styled.div`
   order: 1;
   max-width: 100%;
   margin: 30px 0px;
   @media (min-width: 496px) {
+    order: 1;
+    width: 100%;
+  }
+  @media (min-width: 1000px) {
     order: 3;
+    width: auto;
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 `
 
