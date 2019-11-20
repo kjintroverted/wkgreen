@@ -44,12 +44,9 @@ const NavBar = styled.div`
       width: 100vw;
       height: ${opts.headerH }px;
       display: flex;
-      background: white;
+      background: ${colors.light };
       align-items: center;
-      color: ${colors.darker };
-      & a {
-        color: ${colors.darker };
-      }
+      box-shadow: rgba(0,0,0,.1) 1px 1px 10px;
       & .title {
         margin-left: 5px;
         cursor: default;

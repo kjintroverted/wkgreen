@@ -14,7 +14,7 @@ const Home = () => {
           <Subtext>Instruction</Subtext>
         </Dev>
         <BannerIcon>
-          <img src="https://cdn.discordapp.com/attachments/587692729044303893/646737878919151632/kaos_kj_tw.png" alt="wkgreen_icon" />
+          <img src="https://cdn.discordapp.com/attachments/587692729044303893/646749955305766913/kaos_kj_bw.png" alt="wkgreen_icon" />
         </BannerIcon>
         <Design className="flex">
           <Subtitle>Designer</Subtitle>
@@ -53,8 +53,8 @@ const Home = () => {
       </Section>
 
       {/* EXPERIENCE AND PROJECTS */ }
-      <Section className="primary">
-        <BarHeader className="primary">Experience.</BarHeader>
+      <Section className="light">
+        <BarHeader className="light">Experience.</BarHeader>
         <Row>
           <Card className="skinny flat">
             <HeaderImg>
@@ -96,8 +96,8 @@ const Home = () => {
       </Section>
 
       {/* SKILLS AND LANGS */ }
-      <Section className="dark">
-        <BarHeader className="dark">Skills.</BarHeader>
+      <Section className="light">
+        <BarHeader className="light">Skills.</BarHeader>
         <Column>
           <Card className="flat">
             <h3>Lifetime Learner</h3>
@@ -149,7 +149,7 @@ const Black = styled.div`
   left: 0;
   width: 50%;
   height: 100%;
-  background: ${colors.darker };
+  background: black;
 `
 
 const BannerIcon = styled.div`
@@ -187,7 +187,6 @@ const Design = styled.div`
   justify-content: center;
   align-items: flex-end;
   order: 4;
-  color: ${colors.darker }
 `
 
 const Subtitle = styled.h1`

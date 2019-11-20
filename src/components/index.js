@@ -116,7 +116,7 @@ export const HeaderImg = styled.div`
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background: ${colors.secondary };
+  background: ${colors.darker };
   color: white;
   border-radius: 5px;
   &.red {
