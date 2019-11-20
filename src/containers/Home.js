@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Section, Card, HeaderBar, Row, HeaderImg, BarHeader, Column, colors } from '../components';
+import { Section, Card, HeaderBar, Row, HeaderImg, BarHeader, Column } from '../components';
 
 const Home = () => {
   return (
